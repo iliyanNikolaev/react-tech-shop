@@ -8,6 +8,7 @@ import { Checkout } from "./pages/Checkout"
 import { Login } from "./pages/Login"
 import { Admin } from "./pages/Admin"
 import { Contacts } from "./pages/Contacts"
+import { UploadImg } from "./component/uploadImg"
 
 function App() {
 
@@ -15,6 +16,8 @@ function App() {
     <>
       <Link to='/'>Home</Link>
 
+      <UploadImg />
+      
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/collection/:name" element={<Collection />} />
